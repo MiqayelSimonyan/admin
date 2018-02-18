@@ -256,12 +256,11 @@ router.get('/permissions', (req, res, next) => {
 });
 
 router.post('/permission', (req, res, next) => {
-  const { permissions } = req.body;
-  let permissionsFilter = permissions.map(permission => permission.name);
+  const { permissions, permissionsArray } = req.body;
 
   Permission.insertMany(permissions)
     .then(() => {
-      Permission.find({ name: { $in: permissionsFilter } })
+      Permission.find({ name: { $in: permissionsArray } })
         .exec()
         .then(items => {
           res.send({

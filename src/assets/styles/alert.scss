@@ -1,6 +1,7 @@
 .alert_wrapper {
   font-family: tahoma;
   position: absolute;
+  z-index: 99;
   right: 8px;
   top: 60px;
   .alert_item {

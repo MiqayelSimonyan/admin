@@ -36,12 +36,12 @@ class PermissionListContainer extends Component {
   }
 
   addPermissionHandler = chips => {
-    this.setState({ permissions: chips.map(chip => ({ name: chip })) });
+    this.setState({ permissions: chips.map(chip => ({ name: chip })), permissionsArray: chips });
   }
 
   addPermission = () => {
     if (this.state && this.state.permissions)
-      this.props.AddPermission('/api/permission', { permissions: this.state.permissions });
+      this.props.AddPermission('/api/permission', { permissions: this.state.permissions, permissionsArray: this.state.permissionsArray });
   }
 
   render() {
