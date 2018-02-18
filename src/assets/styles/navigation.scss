@@ -1,0 +1,16 @@
+.navigation {
+    ul {
+        &>div {
+            width : 23%;
+        }
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: #5a5757;
+    }
+    .navigation_active {
+        background-color: rgb(0, 188, 212);
+        color: #fff;
+    }
+}

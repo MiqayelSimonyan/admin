@@ -1,0 +1,69 @@
+.user_component_wrapper {
+  margin-left: 30px;
+  display: flex;
+  width: 32%;
+}
+
+.permission_title {
+  display: inline-block;
+  min-width: 110px;
+}
+
+.device_title {
+  display: inline-block;
+  min-width: 70px;
+  padding: 7px 0;
+}
+
+.edit_area {
+  width: 92%;
+  margin-top: 7px;
+  float: right;  
+}
+
+.device_edit_area {
+  width: 96%;
+}
+
+.edit_icon {
+  top: 1px!important;
+}
+
+.add_field {
+  outline: -webkit-focus-ring-color auto 5px;
+  margin: 10px 0; 
+}
+
+.add_device_field {
+  padding: 5px;
+}
+
+.add_device_button {
+  margin: 10px 0!important;
+}
+
+.new_device_wrapper {
+  & div {
+    width: 100%!important;
+  }
+  .device_permissions {
+    top: 0;
+    margin-top: 0!important;
+    margin-left: 0;
+  }
+
+  .add_permission_wrapper {
+    margin-top: 10px;
+    &+div {
+      margin: 3px 0 10px 0!important;
+    }
+  }
+}
+
+.permissions_wrapper {
+  margin-left: 30px;
+}
+
+.add_new_device {
+  padding-bottom: 10px;
+}
